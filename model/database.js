@@ -73,6 +73,7 @@ class Db {
         console.log(Db.studios.sort(byName));
         console.log(Db.series.sort(byName));
         console.log(Db.tags.sort(byName));
+        return Db.names;
     }
 }
 
@@ -98,4 +99,4 @@ Db.save(
         "Miharu và Natsumi là hai nữ sinh rất thân với nhau như hình với bóng. Natsumi là cô gái ít nói dè dặt, cô có một cậu bạn trai nhưng ngày càng ít liên lạc với nhau dẫn đến tình cảm lạnh nhạt dần. Miharu thì hay phá đám muốn họ chia tay để Natsumi trở về với mình như xưa. Trong quá trình phá, Miharu thường để cậu sờ mó thân thể và vô tình cậu bạn trai của Natsumi đã phải lòng Miharu. Từ đó anh ta rất ít quan tâm đến Natsumi mà bỏ mặc cô..."
     )
 );
-Db.build();
+window.rs = Db.build();

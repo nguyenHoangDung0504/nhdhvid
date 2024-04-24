@@ -1,16 +1,18 @@
 class Cih {
-    static addedHen = null;
+    static addedHen = [];
     static results = [];
 
     static async l(...names) {
         const urls = names.map((name) =>
             name.includes("http") ? name : `https://ihentai.icu/${name}/`
         );
+
         if (!Cih.addedHen) {
-            const response = await fetch('https://nhdhvid.glitch.me/model/database.min.js');
+            const response = await fetch('https://nhdhvid.glitch.me/model/database.js');
             const script = await response.text();
             eval(script);
-            Cih.addedHen = window.db.names;
+            Cih.addedHen = window.rs;
+            console.log(Cih.addedHen);
         }
 
         for (const url of urls) {
@@ -19,6 +21,8 @@ class Cih {
                 Cih.leakData(url);
             }
         }
+
+        console.log('Done');
     }
 
     static async leakData(url) {
@@ -88,7 +92,8 @@ class Cih {
         leakedData.desc = inforSheet
             .querySelector(".tw-text-sm")
             .textContent.trim()
-            .replaceAll("\n", " ");
+            .replaceAll("\n", " ")
+            .replaceAll("'", "\\'");
 
         function standarlize(s) {
             return s.trim().toLowerCase();
