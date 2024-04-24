@@ -15,6 +15,7 @@ class App {
                     if (Object.hasOwnProperty.call(series, hen)) {
                         const hens = series[hen];
                         const hensView = document.createElement("details");
+                        hensView.classList.add('sub');
                         hensView.innerHTML += `<summary class="sub">${hen}</summary>`;
 
                         const grid = document.createElement("div");
