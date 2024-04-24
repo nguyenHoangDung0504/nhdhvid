@@ -53,7 +53,7 @@ class Cih {
 
             toString() {
                 const { name, src, thumbnail, studio, series, tags, desc } = leakedData;
-                return `addData(new H('${name}', '${src}', '${thumbnail}', '${studio}', '${series}', '${tags}', '${desc}'))`;
+                return `Db.save(new H('${name}', '${src}', '${thumbnail}', '${studio}', '${series}', '${tags}', '${desc}'))`;
             },
         };
 

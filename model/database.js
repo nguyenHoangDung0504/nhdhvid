@@ -141,7 +141,7 @@ Db.save(
         "Miharu và Natsumi là hai nữ sinh rất thân với nhau như hình với bóng. Natsumi là cô gái ít nói dè dặt, cô có một cậu bạn trai nhưng ngày càng ít liên lạc với nhau dẫn đến tình cảm lạnh nhạt dần. Miharu thì hay phá đám muốn họ chia tay để Natsumi trở về với mình như xưa. Trong quá trình phá, Miharu thường để cậu sờ mó thân thể và vô tình cậu bạn trai của Natsumi đã phải lòng Miharu. Từ đó anh ta rất ít quan tâm đến Natsumi mà bỏ mặc cô..."
     )
 );
-addData(
+Db.save(
     new H(
         "shunka shuutou 1",
         "https://play.sonar-cdn.com/play/28f06c53-6191-498b-a12f-1d131382e530",
@@ -152,7 +152,7 @@ addData(
         "Miharu và Natsumi là hai nữ sinh rất thân với nhau như hình với bóng. Natsumi là cô gái ít nói dè dặt, cô có một cậu bạn trai nhưng ngày càng ít liên lạc với nhau dẫn đến tình cảm lạnh nhạt dần. Miharu thì hay phá đám muốn họ chia tay để Natsumi trở về với mình như xưa. Trong quá trình phá, Miharu thường để cậu sờ mó thân thể và vô tình cậu bạn trai của Natsumi đã phải lòng Miharu. Từ đó anh ta rất ít quan tâm đến Natsumi mà bỏ mặc cô..."
     )
 );
-addData(
+Db.save(
     new H(
         "tsundero series 3",
         "https://play.sonar-cdn.com/play/67d16717-079e-4586-b3cf-9c8299081c3e",
@@ -163,7 +163,7 @@ addData(
         "Yosuke là một nam sinh viên, gia đình thì cắt tiền chi tiêu và bắt anh tự thây đi làm, họ giới thiệu kèo làm gia sư dạy riêng cho một cô bé tên Yuuna. Cô bé là một nữ sinh Tsundere đáng yêu, quyến rũ với bộ ngực khủng được bao chàng trai tỏ tình nhưng cô bé luôn muốn yêu một người đủ chân thành. Yosuke rất mê các cô bé Loli mặc đồ bơi, anh thường mua phim và game về chúng để tự thẩm và bị Yuuna phát hiện..."
     )
 );
-addData(
+Db.save(
     new H(
         "tsundero series 1",
         "https://play.sonar-cdn.com/play/1ded620e-8506-4a86-a878-cbb4195e355e",
@@ -174,7 +174,7 @@ addData(
         "Yoshii Yuuka là nữ sinh năm 2 của một học viện. Một nàng hậu xinh đẹp tài sắc vẹn toàn, tuy nhiên phía sau ánh hào quang là một người phụ nữ cuồng dâm nghiện chơi lỗ hậu. Coi vậy Yuuka vẫn còn là một trinh nữ vì ảo tưởng quá nhiều nên vẫn chưa có bồ... Một ngày Yuuka phát hiện kẻ rình rập mình bấy lâu là Kinoshita Takashi đang đứng sục cặc ngay bàn học của mình và vô tình xuất tinh lên người Yuuka. Thế là Yuuka lên cơn nứng lỗ đít..."
     )
 );
-addData(
+Db.save(
     new H(
         "tsundero series 2",
         "https://play.sonar-cdn.com/play/07636afc-bd0f-4b5a-89f7-b821b56f103e",
@@ -185,7 +185,7 @@ addData(
         "Kizuno Hitomi là một chủ tịch hội học sinh của trường học. Hitomi nghiện cosplay nên thường tham gia các sự kiện lớn nhỏ với trang phục dung tục gợi cảm, đặc biệt là trang phục hầu gái Yuumi. Sau những sự kiện Hitomi thường nứng lồn và về nhà ngồi rên rỉ thủ dâm qua lỗ hậu tuy vậy cô vẫn còn trinh. Việc này học sinh trong trường không ai biết cả, nhưng cho đến một ngày, cô đến văn phòng một câu lạc bộ Anime đề nghị giải tán câu lạc bộ vì họ vi phạm quá nhiều nội quy CLB..."
     )
 );
-addData(
+Db.save(
     new H(
         "tsundero series 6",
         "https://play.sonar-cdn.com/play/05c5131d-f09c-4431-ad8a-c6041660302a",
@@ -196,7 +196,7 @@ addData(
         "Shiga Yuuto là một nam sinh viên năm nhất bình thường. Cuộc sống của anh bất ngờ thay đổi khi cha anh kết hôn với người phụ nữ hàng xóm. Từ ngày đó, Yuuto có thêm hai cô chị gái riêng là Ayaka, y tá ở trường anh và Haruka, giáo viên thể dục. Ayaka và Haruka định đợi khi Yuuto tốt nghiệp sẽ đè thằng bé ra thịt. Nhưng một ngày nọ, một tai nạn xảy ra đã khiến họ tiến xa hơn so với kế hoạch. Yuuto phải thực hiện lời hứa năm nào là phải cưới cả Ayaka và Haruka..."
     )
 );
-addData(
+Db.save(
     new H(
         "tsundero series 5",
         "https://play.sonar-cdn.com/play/aedddbf9-0a0e-4095-8718-1a1074095008",
@@ -207,7 +207,7 @@ addData(
         "Aoi là cô gái tài năng thuộc một câu lạc bộ thể dục nhịp điệu của trường. Dù Aoi vô cùng xuất sắc trong các màn trình diễn nhưng cô bé lại có một vấn đề là quá nhút nhát trước đám đông. Trước thềm giải đấu tiếp theo, cô tìm kiếm sự giúp đỡ từ một vị huấn luyện viên để vượt qua sự nhút nhát của mình. Mỗi đêm trong 10 ngày, Aoi sẽ phải làm tất cả những gì huấn luyện viên yêu cầu. Từ đó Aoi phải trải qua 10 ngày liên tục bị quấy rối tình dục. Thay vì sợ hãi, hoang mang thì Aoi dần quen với điều đó và từ khi nào cô bé đã trao cơ thể và cả trái tim mình cho vị huấn luyện viên..."
     )
 );
-addData(
+Db.save(
     new H(
         "tsundero series 4",
         "https://play.sonar-cdn.com/play/cb36a281-529a-4d48-8253-1f2acc126b40",
