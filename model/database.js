@@ -71,11 +71,10 @@ class Db {
         // Group by studio
         Db.hStorage.forEach(h => {
             h.studios.forEach(studio => {
-                let studioName = studio.toUpperCase();
-                if (!groups[studioName]) {
-                    groups[studioName] = [h];
+                if (!groups[studio]) {
+                    groups[studio] = [h];
                 } else {
-                    groups[studioName].push(h);
+                    groups[studio].push(h);
                 }                
             })
         });
@@ -86,7 +85,7 @@ class Db {
             let nameGroups = {};
 
             studioGroup.forEach(h => {
-                let hName = h.name.toUpperCase();
+                let hName = h.name.toLowerCase();
                 let groupName = null;
 
                 for (let groupName in nameGroups) {
