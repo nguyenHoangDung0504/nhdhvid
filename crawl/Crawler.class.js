@@ -7,18 +7,19 @@ class Cih {
             name.includes("http") ? name : `https://ihentai.icu/${name}/`
         );
 
-        if (!Cih.addedHen) {
-            const response = await fetch('https://nhdhvid.glitch.me/model/database.js');
+        if (Cih.addedHen.length == 0) {
+            const response = await fetch('https://nhdhvid.glitch.me/model/database.min.js');
             const script = await response.text();
             eval(script);
             Cih.addedHen = window.rs;
-            console.log(Cih.addedHen);
         }
 
         for (const url of urls) {
             const name = url.split('/').filter(e => e)[2];
             if(!Cih.addedHen.includes(name)) {
                 Cih.leakData(url);
+            } else {
+                console.log('Duplicate data:', name);
             }
         }
 
@@ -105,7 +106,7 @@ class Cih {
     static getResult() {
         const dummyTextArea = document.createElement('textarea');
         dummyTextArea.value = Cih.results.join('\n');
-        dummyTextArea.style.position = 'fixed';  // Đảm bảo nó không ảnh hưởng đến giao diện
+        dummyTextArea.style.position = 'fixed';
         document.body.appendChild(dummyTextArea);
         dummyTextArea.select();
         document.execCommand('copy');

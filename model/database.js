@@ -65,6 +65,47 @@ class Db {
         }
     }
 
+    static getGroup() {
+        let groups = {};
+
+        // Group by studio
+        Db.hStorage.forEach(h => {
+            let studioName = h.studio.toUpperCase();
+            if (!groups[studioName]) {
+                groups[studioName] = [h];
+            } else {
+                groups[studioName].push(h);
+            }
+        });
+
+        // Group within each studio group by name
+        for (let studioName in groups) {
+            let studioGroup = groups[studioName];
+            let nameGroups = {};
+
+            studioGroup.forEach(h => {
+                let hName = h.name.toUpperCase();
+                let groupName = null;
+
+                for (let groupName in nameGroups) {
+                    if (checkName(hName, groupName)) {
+                        nameGroups[groupName].push(h);
+                        return;
+                    }
+                }
+
+                if (!groupName) {
+                    groupName = hName;
+                    nameGroups[groupName] = [h];
+                }
+            });
+
+            groups[studioName] = nameGroups;
+        }
+
+        return groups;
+    }
+
     static build() {
         const byName = (a, b) => a.name.localeCompare(b.name);
 
