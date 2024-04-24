@@ -3,6 +3,7 @@ class App {
 
     static build() {
         const dataCtn = document.querySelector(".data-ctn");
+        dataCtn.innerHTML = "";
 
         for (const studio in App.data) {
             if (Object.hasOwnProperty.call(App.data, studio)) {
@@ -14,7 +15,7 @@ class App {
                     if (Object.hasOwnProperty.call(series, hen)) {
                         const hens = series[hen];
                         const hensView = document.createElement("details");
-                        hensView.innerHTML += `<summary class="sub">${studio}</summary>`;
+                        hensView.innerHTML += `<summary class="sub">${hen}</summary>`;
 
                         const grid = document.createElement("div");
                         grid.classList.add("gallery-grid");
@@ -36,7 +37,7 @@ class App {
                     }
                 }
 
-                dataCtn.appendChild(studioView)
+                dataCtn.appendChild(studioView);
             }
         }
     }
