@@ -137,7 +137,7 @@ body.openModel {
 }
 
 details.sub {
-    padding: 10px;
+    padding-inline: 10px;
 }
 
 summary {
