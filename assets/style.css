@@ -136,7 +136,12 @@ body.openModel {
     margin-bottom: 20px;
 }
 
+details.sub {
+    padding: 10px;
+}
+
 summary {
+    color: white;
     margin: 0 15%;
     margin-bottom: 10px;
     padding: 15px;
@@ -146,6 +151,15 @@ summary {
     font-weight: bold;
     cursor: pointer;
     background-color: black;
+}
+
+summary.sub {
+    background-color: #111111;
+    margin-bottom: 2px;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 .gallery {

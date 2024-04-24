@@ -69,22 +69,22 @@ class Db {
         let groups = {};
 
         // Group by studio
-        Db.hStorage.forEach(h => {
-            h.studios.forEach(studio => {
+        Db.hStorage.forEach((h) => {
+            h.studios.forEach((studio) => {
                 if (!groups[studio]) {
                     groups[studio] = [h];
                 } else {
                     groups[studio].push(h);
-                }                
-            })
+                }
+            });
         });
 
         // Group within each studio group by name
         for (let studioName in groups) {
-            let studioGroup = groups[studioName];
+            let studioGroup = groups[studioName].sort();
             let nameGroups = {};
 
-            studioGroup.forEach(h => {
+            studioGroup.forEach((h) => {
                 let hName = h.name.toLowerCase();
                 let groupName = null;
 
