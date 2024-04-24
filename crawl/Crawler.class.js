@@ -111,5 +111,6 @@ class Cih {
         dummyTextArea.select();
         document.execCommand('copy');
         document.body.removeChild(dummyTextArea);
+        Cih.results = [];
     }
 }
