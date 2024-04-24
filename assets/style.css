@@ -136,6 +136,10 @@ body.openModel {
     margin-bottom: 20px;
 }
 
+details:not(.sub) {
+    margin-bottom: 10px;
+}
+
 details.sub {
     padding-inline: 10px;
 }
@@ -507,6 +511,9 @@ input[type="number"]::-webkit-inner-spin-button {
         margin: 10px 0px;
         font-size: .9rem;
         padding: 10px;
+    }
+    summary.sub {
+        font-size: .85rem;
     }
 
     .gallery {
