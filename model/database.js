@@ -61,16 +61,18 @@ class Db {
         if (index != -1) {
             list[index].quantity++;
         } else {
-            list[index] = data;
+            list.push(data);
         }
     }
 
     static build() {
+        const byName = (a, b) => a.name.localeCompare(b.name);
+
         console.log(Db.hStorage);
         console.log(Db.names);
-        console.log(Db.studios);
-        console.log(Db.series);
-        console.log(Db.tags);
+        console.log(Db.studios.sort(byName));
+        console.log(Db.series.sort(byName));
+        console.log(Db.tags.sort(byName));
     }
 }
 
